@@ -1,0 +1,10 @@
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Proctoring System</h2>
+    <div class="video-container mb-3" [ngClass]="{'background-image': !isRecording}">
+      <video #videoElement autoplay class="w-100 border rounded"></video>
+    </div>
+    <div id="warnings" class="mt-3"></div>
+    <button class="btn btn-primary mt-3" (click)="startVideoSession()">Start Recording</button>
+    <button class="btn btn-danger mt-3 ms-3" (click)="stopRecording()">Stop Recording</button>
+  </div>
+  
